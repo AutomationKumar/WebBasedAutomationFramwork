@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="methods" thread-count="40">
+
+    <parameter name="executionOn" value="web" />
+    <parameter name="suite" value="Master Suite" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="headless" value="true" />
+
+    <listeners>
+        <listener class-name="com.listeners.ListenerClass" />
+    </listeners>
+
+    <test name="Master Test Execution" parallel="classes">
+        <classes>
+
+            <!-- Channel Partner -->
+            <class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerCreation" />
+            <class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerDetails" />
+            <class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerExecution" />
+
+            <!-- Knowledge Base -->
+            <class name="com.businessnext.knowledgebase.testcases.KnowldgeBaseNewTestCases" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesExecution" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesConfiguration" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesConfiguration1" />
+
+            <!-- Campaign Designer -->
+            <class name="com.businessnext.campaigndesigner.testcases.CampaignDesignerFlow" />
+            <class name="com.businessnext.campaigndesigner.testcases.CampaignDesignerTestCases" />
+
+            <!-- RSS -->
+            <class name="com.businessnext.rssfeed.testcases.RSSFeedTestCases" />
+            <class name="com.businessnext.rssfeed.testcases.RSSFeed" />
+
+            <!-- Ring Management -->
+            <class name="com.businessnext.ringmanagement.testcases.RingManagementTestCases" />
+            <class name="com.businessnext.ringmanagement.testcases.RingManagementNewTestCases" />
+
+            <!-- DMS -->
+            <class name="com.businessnext.dms.testcases.NewTestCasesforDMS" />
+            <class name="com.businessnext.dms.testcases.DmsFolder" />
+            <class name="com.businessnext.dms.testcases.DmsView" />
+            <class name="com.businessnext.dms.testcases.DmsSmoke2" />
+            <class name="com.businessnext.dms.testcases.DmsTestCases" />
+            <class name="com.businessnext.dms.testcases.DmsCrud" />
+            <class name="com.businessnext.dms.testcases.DmsLayout" />
+            <class name="com.businessnext.dms.testcases.DmsDifferentPlateformConfiguration" />
+
+            <!-- Campaign Scheduler -->
+            <class name="com.businessnext.campaignscheduler.testcases.CampaignSchedulerTestCases" />
+
+            <!-- PDF Processing -->
+            <class name="com.businessnext.pdfprocessing.testcases.PDFProcessingConfigurationExecution" />
+
+            <!-- Journey -->
+            <class name="com.businessnext.journey.testcases.CRUD_Journey" />
+            <class name="com.businessnext.journey.testcases.JourneyRelatedFunctionality" />
+
+            <!-- Call Script -->
+            <class name="com.businessnext.callscript.testcases.CallScript" />
+            <class name="com.businessnext.callscript.testcases.CallScriptCrudTestCases" />
+
+            <!-- Opportunity -->
+            <class name="com.businessnext.opportunityTestCases.OpportunityExecutionTestCases" />
+            <class name="com.businessnext.opportunityTestCases.OpportunityCreationTestCases" />
+
+            <!-- Campaign -->
+            <class name="com.businessnext.campaign.testcases.CampaignCrudTestCases" />
+            <class name="com.businessnext.campaign.testcases.CampaignFunctionalityTestCases" />
+            <class name="com.businessnext.campaign.testcases.CampaignMigrateTestCases" />
+
+            <!-- Project -->
+            <class name="com.businessnext.project.testcases.ProjectCrudTestCases" />
+            <class name="com.businessnext.project.testcases.ProjectModuleTestCases" />
+
+            <!-- Quote -->
+            <class name="com.businessnext.quote.testcases.QuoteCrudTestCases" />
+            <class name="com.businessnext.quote.testcases.QuoteModuleTestCases" />
+
+            <!-- Contract -->
+            <class name="com.businessnext.contract.testcases.ContractModule" />
+
+            <!-- OCP -->
+            <class name="com.businessnext.ocp.testcases.AllocationPolicyTestCases" />
+            <class name="com.businessnext.ocp.testcases.AllocationQueueTestCases" />
+            <class name="com.businessnext.ocp.testcases.PresenceStatus" />
+
+            <!-- Territory Management -->
+            <class name="com.businessnext.territorymanagement.testcases.TerritoryManagement" />
+            <class name="com.businessnext.territorymanagement.testcases.TerritoryManagementDesign" />
+
+            <!-- Content Library -->
+            <class name="com.businessnext.contentlibrary.testCases.ContentTestCases" />
+            <class name="com.businessnext.contentlibrary.testCases.WorkSpacesTestCases" />
+
+            <!-- Personal Content Library -->
+            <class name="com.businessnext.personalcontentlibrary.testCases.PersonalcontentLibraryTestCases" />
+
+            <!-- Personal Settings -->
+            <class name="com.businessnext.personalsettings.testcases.ExecutePersonalSettingsTestCases" />
+
+
+            <!-- ============================ -->
+            <!--  CUSTOM ACTION BUTTON MODULE  -->
+            <!-- ============================ -->
+
+      <class name="com.businessnext.customactionbutton.testcases.ChangeActionButton_BySelectingTeam_AndTransferToLoginUser"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButtonExecution_AutoAssignment_DetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerificationSearchOptionsOnListingPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationNewButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButtonExecution_UsingAssignmentRule_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_UsingApplyServerSideValidation_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButtonExecutionUsingAlternatelabel_OndetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_BatchSettingConfiguration_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ExecuteFilterButtonUsingDifferentOperator"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_CreateActivityType_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.PrintActionButtonCreationVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangewnerActionButton_ShowLoggedInUserCheckbox_InTransferToSetting"/>
+      <class name="com.businessnext.customactionbutton.testcases.ScriptActionButton_CreationAndVerification_OnNewEditPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.Active_InActiveVerificationCustomActionButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_AutoResponse_DetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_AutoflowData_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonUsingTeamCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ToolBoxInCustomActionButtonVerification"/>
+      <class name="com.businessnext.customactionbutton.testcases.MergeActionButtonCreationAndVerificationOnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerificationSearchDropDownCustomActionButtonListingPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationReleaseTypeActionButton_OnHomepage"/>
+      <class name="com.businessnext.customactionbutton.testcases.TriggerAcitonButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_SubOrdinate_TransferToPicker_UserTypeAsLoginUser"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonUsingTeamAsTransferToPicker_AndTransferFrom"/>
+      <class name="com.businessnext.customactionbutton.testcases.MergeActionButtonCreationAndVerificationOnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Default_TransferToPicker_UserTypeAsTransferFrom"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionbutton_FunctionalityOnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonExecution_Individual_ScopeOfTransferFromPicker"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_FunctionalityOfShowLoggedInUserCheckbox"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Creation_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButtonUsingPomptFiled_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_FixedFilterAppliedTransfertoCriteriasettings"/>
+      <class name="com.businessnext.customactionbutton.testcases.FileUploadActionButtonExecution_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ScreenFlowButtonCreantionAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButtonExecution_UsingDedupeRule_DetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_IgnoreAssignmentRule_HomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.AllowEmptyValueInUpdateActionButtonExecution"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationNextButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonExecution_SubOrdinate_ScopeOfTransferFromPicker"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_UsingfieldAssignTo_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_UsingAssignmentRule_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerificationMaximizeAndMinimizeActionButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonWithFixedFilterAppliedTransfertoCriteriasettings"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButtonExecutionUsingMergeField_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.HistoryPageAndDeleteActionButton_Verification"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerifyCustomActionButton_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_IgnoreAssigment_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.FetchActionButtonCreationAndExecution_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVrificationPreviousButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerButton_SubOrdinate_TransferToPicker_UserTypeAsTransferFrom"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerifyLayouttypePageAndActionTypeButtonVisibility"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeButtonShowUsersWithSameRoleAsTransferFromCheckbox_InTransferTo"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonUsingUpdateDataAutoFlow_CreationAndVerification"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Default_TransferToPicker_UserTypeAsLoginUser"/>
+      <class name="com.businessnext.customactionbutton.testcases.ScreenFlowButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.DudupeRuleActionButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Team_SelectedInScopeofTransferFrompicker"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Team_ScopeOfTransferFromPicker_HomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationDropDownValuesVisiblity"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonExecution_UsingOwner_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ReportActionButtoncraetionAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.FileUploadActionButtonCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonUsingTransferFromCheckboxchecked"/>
+      <class name="com.businessnext.customactionbutton.testcases.MassPrintActionButtonCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationCancelButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Individual_TransferToPicker_UserTypeAsTransferFrom"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_AutoRespone_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.MassPrintActionButton_Report_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.IntegrationActionButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.IntegrationActionButtonCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ApprovalRequestActionButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.DeleteCustomActionButtons"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdatedActionButtonCreationAndVerification_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CreationAndVerificationSaveButton"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonExecution_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.CloneTypeActionButtonCreationAndVerification"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_UserPickerField_SelectedInOwnershipField"/>
+      <class name="com.businessnext.customactionbutton.testcases.VerificationExpandAndCollapseoptionOption"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonExecution_Default_ScopeOfTransferFromPicker"/>
+      <class name="com.businessnext.customactionbutton.testcases.AssignmentActionButtonCreationAndVerification"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButtonCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_CreateActivityType_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButtonExecution_AutoAssignment_HomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.QualityCheckCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_TwoFilterCreationAndVerification_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ReportTypeActionButtonCreationAndVerificationOnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButton_UsingApplyServerSideValidation_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Team_TransferToPicker_UserTypeAsLogInUser"/>
+      <class name="com.businessnext.customactionbutton.testcases.ApprovalRequestActionButtonCreationAndVerification"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_AutoflowState_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButtonUsingAutoflow_UpdateState_InTransferToSetting"/>
+      <class name="com.businessnext.customactionbutton.testcases.AssignmentActionButton_WithEnforce_HomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_GenerateAutoResponse_HomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_AutoflowState_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ImportActionButtonExecution_UsingDedupeRule_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_VisibiltyOnSpecifyTimeInterval"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_AutoflowUpdateData_OnHomePage"/>
+      <class name="com.businessnext.customactionbutton.testcases.ChangeOwnerActionButton_Individual_TransferToPicker_UserTypeAsLoginUser"/>
+      <class name="com.businessnext.customactionbutton.testcases.TeamCollaborationCreation_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.Incident_PrintTypeBulkGenerationButton_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.UpdateActionButton_UsingAssignmentRule_OnDetailPage"/>
+      <class name="com.businessnext.customactionbutton.testcases.DateTimeFieldGettingUpdated_ActionButtonCreation"/>
+
+        </classes>
+    </test>
+
+</suite>

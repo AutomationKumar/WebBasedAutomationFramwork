@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="methods" thread-count="20">
+
+    <parameter name="executionOn" value="web" />
+    <parameter name="suite" value="Master Suite" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="headless" value="true" />
+
+    <listeners>
+        <listener class-name="com.listeners.ListenerClass" />
+    </listeners>
+
+    <test name="Master Test Execution" parallel="classes">
+        <classes>
+
+          <!-- Channel Partner -->
+            <class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerCreation" />
+			<class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerDetails" />
+			<class name="com.businessnext.ChannelPartner.testcases.ChannelPartnerExecution" />
+            
+            <!-- Knowledge Base -->
+            <class name="com.businessnext.knowledgebase.testcases.KnowldgeBaseNewTestCases" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesExecution" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesConfiguration" />
+            <class name="com.businessnext.knowledgebase.testcases.KnowledgeBaseTestCasesConfiguration1" />
+
+            <!-- Campaign Designer -->
+            <class name="com.businessnext.campaigndesigner.testcases.CampaignDesignerFlow" />
+            <class name="com.businessnext.campaigndesigner.testcases.CampaignDesignerTestCases" />
+
+            <!-- RSS -->
+            <class name="com.businessnext.rssfeed.testcases.RSSFeedTestCases" />
+            <class name="com.businessnext.rssfeed.testcases.RSSFeed" />
+
+            <!-- Ring Management -->
+            <class name="com.businessnext.ringmanagement.testcases.RingManagementTestCases" />
+            <class name="com.businessnext.ringmanagement.testcases.RingManagementNewTestCases" />
+
+            <!-- DMS -->
+            <class name="com.businessnext.dms.testcases.NewTestCasesforDMS" />
+            <class name="com.businessnext.dms.testcases.DmsFolder" />
+            <class name="com.businessnext.dms.testcases.DmsView" />
+            <class name="com.businessnext.dms.testcases.DmsSmoke2" />
+            <class name="com.businessnext.dms.testcases.DmsTestCases" />
+            <class name="com.businessnext.dms.testcases.DmsCrud" />
+            <class name="com.businessnext.dms.testcases.DmsLayout" />
+            <class name="com.businessnext.dms.testcases.DmsDifferentPlateformConfiguration" />
+
+            <!-- Campaign Scheduler -->
+            <class name="com.businessnext.campaignscheduler.testcases.CampaignSchedulerTestCases" />
+
+            <!-- PDF Processing -->
+            <class name="com.businessnext.pdfprocessing.testcases.PDFProcessingConfigurationExecution" />
+
+            <!-- Journey -->
+            <class name="com.businessnext.journey.testcases.CRUD_Journey" />
+            <class name="com.businessnext.journey.testcases.JourneyRelatedFunctionality" />
+
+            <!-- Call Script -->
+            <class name="com.businessnext.callscript.testcases.CallScript" />
+            <class name="com.businessnext.callscript.testcases.CallScriptCrudTestCases" />
+
+            <!-- Opportunity -->
+            <class name="com.businessnext.opportunityTestCases.OpportunityExecutionTestCases" />
+            <class name="com.businessnext.opportunityTestCases.OpportunityCreationTestCases" />
+
+            <!-- Campaign -->
+            <class name="com.businessnext.campaign.testcases.CampaignCrudTestCases" />
+            <class name="com.businessnext.campaign.testcases.CampaignFunctionalityTestCases" />
+            <class name="com.businessnext.campaign.testcases.CampaignMigrateTestCases" />
+
+            <!-- Project -->
+            <class name="com.businessnext.project.testcases.ProjectCrudTestCases" />
+            <class name="com.businessnext.project.testcases.ProjectModuleTestCases" />
+
+            <!-- Quote -->
+            <class name="com.businessnext.quote.testcases.QuoteCrudTestCases" />
+            <class name="com.businessnext.quote.testcases.QuoteModuleTestCases" />
+
+            <!-- ScreenFlow -->
+            <class name="com.businessnext.screenflow.testcases.ScreenFlowCrud" />
+            
+             <!-- Contract -->
+            <class name="com.businessnext.contract.testcases.ContractModule" />
+
+            <!-- OCP -->
+            <class name="com.businessnext.ocp.testcases.AllocationPolicyTestCases" />
+            <class name="com.businessnext.ocp.testcases.AllocationQueueTestCases" />
+            <class name="com.businessnext.ocp.testcases.PresenceStatus" />
+
+            <!-- Territory Management -->
+            <class name="com.businessnext.territorymanagement.testcases.TerritoryManagement" />
+            <class name="com.businessnext.territorymanagement.testcases.TerritoryManagementDesign" />
+
+            <!-- Content Library -->
+            <class name="com.businessnext.contentlibrary.testCases.ContentTestCases" />
+            <class name="com.businessnext.contentlibrary.testCases.WorkSpacesTestCases" />
+
+            <!-- Personal Content Library -->
+            <class name="com.businessnext.personalcontentlibrary.testCases.PersonalcontentLibraryTestCases" />
+
+            <!-- Personal Settings -->
+            <class name="com.businessnext.personalsettings.testcases.ExecutePersonalSettingsTestCases" />
+
+        </classes>
+    </test>
+
+</suite>

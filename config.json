@@ -1,0 +1,320 @@
+{
+    "Common": [
+        {
+            "AccessTokenTimeOut": "30",
+            "CustomerAccessTokenTimeOut": "30",
+            "userName": "auto3",
+            "password": "xo/PD2CeSTcQAQUN4ImAgA=="
+        }
+    ],
+    "mainlinesql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "mainlinesql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "mainlinepg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "mainlinepg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "mainlineora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "MAINLINEORA",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps1sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "cps1sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "cps1ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "cps1ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps1pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "cps1pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "cps2sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "cps2sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "cps2ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "cps2ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps2pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "cps2pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "cps3sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "cps3sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "cps3ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "cps3ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps3pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "cps3pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "cps4sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "cps4sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "cps4ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "cps4ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps4pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "cps4pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "cps5sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "cps5sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "cps5ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "cps5ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "cps5pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "cps5pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "ga1sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "ga1sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "ga1ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "ga1ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "ga1pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "ga1pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "ga2sql": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "ga2sql",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "ga2ora": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "ga2ora",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "ga2pg": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "ga2pg",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "clientsql1": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "clientsql1",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "clientora1": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "clientora1",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "clientpg1": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "clientpg1",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "clientsql2": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "clientsql2",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ],
+    "clientora2": [
+        {
+            "DBType": "oracle",
+            "db_server": "192.168.101.32",
+            "db_port": "1521",
+            "db_name": "AUTO19C",
+            "db_username": "clientora2",
+            "db_password": "BU7ZHY4EoyuGXVcw/tYzKw=="
+        }
+    ],
+    "clientpg2": [
+        {
+            "DBType": "postgresql",
+            "db_server": "192.168.101.65",
+            "db_port": "5432",
+            "db_name": "clientpg2",
+            "db_username": "postgres",
+            "db_password": "UCHzWvFpECVfHdbBxqB9Ig=="
+        }
+    ],
+    "clientsql3": [
+        {
+            "DBType": "SQL",
+            "db_server": "192.168.101.34",
+            "db_port": "1433",
+            "db_name": "clientsql3",
+            "db_username": "sa",
+            "db_password": "grooU5VgXUHpVrjW19jOTw=="
+        }
+    ]
+}
